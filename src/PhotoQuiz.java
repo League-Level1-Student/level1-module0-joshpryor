@@ -22,16 +22,27 @@ public class PhotoQuiz {
 		quizWindow.setVisible(true);
 
 		// 1. find an image on the internet, and put its URL in a String variable (from your browser, right click on the image, and select “Copy Image URL”)
-
+String thing =   "https://vignette.wikia.nocookie.net/elderscrolls/images/2/2f/Awesome.JPG/revision/latest?cb=20110621230520";
 		// 2. create a variable of type "Component" that will hold your image
 
-		// 3. use the "createImage()" method below to initialize your Component
-
-		// 4. add the image to the quiz window
-
-		// 5. call the pack() method on the quiz window
-
 		// 6. ask a question that relates to the image
+String otherThing = JOptionPane.showInputDialog("what has 4 wings and the smallest sckales on there wings");
+
+if (otherThing.equalsIgnoreCase("butterfly")) {
+	Component photo;
+	// 3. use the "createImage()" method below to initialize your Component
+	photo = createImage(thing);
+	// 4. add the image to the quiz window
+	quizWindow.add(photo);
+	// 5. call the pack() method on the quiz window
+	quizWindow.pack();
+}
+else {
+	JOptionPane.showMessageDialog(null, "wrong");
+}
+
+
+
 
 		// 7. print "CORRECT" if the user gave the right answer
 
