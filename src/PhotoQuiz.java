@@ -42,7 +42,7 @@ else {
 }
 
 
-
+String people = "https://media.gettyimages.com/photos/scene-of-the-huge-crowd-present-in-the-piazza-lovale-packed-with-at-picture-id141566286?k=6&m=141566286&s=612x612&w=0&h=JPl_psjSwZOiBjP8jJ-kaB7SMPZesFiCSrypwGTGUe8=";
 
 		// 7. print "CORRECT" if the user gave the right answer
 
@@ -51,11 +51,13 @@ else {
 		// 9. remove the component from the quiz window (you may not see the effect of this until step 12)
 
 		// 10. find another image and create it (might take more than one line of code)
-
+String anotherThing = "http://files.shroomery.org/files/09-36/173294313-awesome.jpg"; 
 		// 11. add the second image to the quiz window
-
+String anotherOtherThing = JOptionPane.showInputDialog("who is the most awesome poson eva.");
 		// 12. pack the quiz window
-
+if (anotherOtherThing.equalsIgnoreCase("josh")) {
+	photo = creatImage(anotherThing);
+}
 		// 13. ask another question
 
 		// 14+ check answer, say if correct or incorrect, etc.
