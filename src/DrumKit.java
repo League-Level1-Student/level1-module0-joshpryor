@@ -28,29 +28,30 @@ public class DrumKit extends MouseAdapter {
 
     private void getGoing() throws MalformedURLException {
    	 // 1. Make a JFrame variable and initialize it using "new JFrame()"
-   	 
-   	 // 2. Make the frame visible
-   	 
+   JFrame	bobTheFoot = new JFrame();
+  	 // 2. Make the frame visible
+   	 bobTheFoot.setVisible(true);
    	 // 3. Set the size of the frame
-   	 
+   	 bobTheFoot.setSize(500, 500);
    	 // 4. Set the title of the frame
-   	 
+   	 bobTheFoot.setTitle("the adventures of bob the foot");
    	 // 5. Make a JPanel and initialize it.
-   	 
+   	 JPanel sallyTheStapler = new JPanel();
    	 // 6. Add the panel to the frame. (The panel is invisible.)
-    
+    bobTheFoot.add(sallyTheStapler);
    	 // 7. Download an image of a drum from the Internet. Drop it into your Eclipse project under "default package".
-   	 // 8. Put the name of your image in a String variable.
-    
+
+    // 8. Put the name of your image in a String variable.
+    String simbaTheSign = "snare.jpg";
    	 // 9. Edit the next line to use your String variable
-// drumLabelWithImage = createLabelImage(drumImageString);
+drumLabelWithImage = createLabelImage(simbaTheSign);
    	 
    	 // 10. Add the image to the panel
-    
+sallyTheStapler.add(drumLabelWithImage);
    	 // 11. Set the layout of the panel to "new GridLayout()"
-    
+sallyTheStapler.setLayout(new GridLayout());
    	 // 12. call the pack() method on the frame
-   	 
+bobTheFoot.pack();
    	 // 13. add a mouse listener to drumLabelWithImage.
 
     }
