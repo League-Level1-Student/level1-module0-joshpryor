@@ -31,7 +31,7 @@ public class BodyPartQuiz {
 	private void startQuiz() {
 
 		// 1. Make an int variable to hold the score.
-
+int score = 0  ;
 		// 2. Set the size of the window in the initializeGui() method below
 
 		for (int i = 0; i < 4; i++) {
@@ -41,7 +41,69 @@ public class BodyPartQuiz {
 			
 			// 5. Check their answer. If they guessed correctly:
 			// -- Tell them they are right and increase the score by 1
+if( i == 0 ) {
+	if (guess.equalsIgnoreCase("arnold")){
+		JOptionPane.showMessageDialog(null, "yes");
+	}
+	else if(guess.equalsIgnoreCase("Schwarzenegger")) {
+		JOptionPane.showMessageDialog(null, "yes");
+	}
+	else if(guess.equalsIgnoreCase("arnold Schwarzenegger")) {
+		JOptionPane.showMessageDialog(null, "yes");
+	}
+	else {
+		JOptionPane.showMessageDialog(null, "no,          INCORRECT");
+	}
+}
+//dicaprio
+if(i == 1) {
+	if (guess.equalsIgnoreCase("leonardo")) {
+		JOptionPane.showMessageDialog(null, "yes");
+	}
+	else if (guess.equalsIgnoreCase("dicaprio")) {
+		JOptionPane.showMessageDialog(null, "yes");
+	}
+	else if (guess.equalsIgnoreCase("leonardo dicaprio")) {
+		JOptionPane.showMessageDialog(null, yes);
+	}
+	else {
+		JOptionPane.showMessageDialog(null, "no,       INCORRECT");
+	}
+}
+//morgan freeman
+if (i == 2) {
+	if (guess.equalsIgnoreCase("morgan")) {
+		JOptionPane.showMessageDialog(null, "yes");
+	}
+	else if (guess.equalsIgnoreCase("freeman")) {
+		JOptionPane.showMessageDialog(null, "yes");
+	}
+	else if (guess.equalsIgnoreCase("morgan freeman")) {
+		JOptionPane.showMessageDialog(null, "yes");
+	}
+	else {
+		JOptionPane.showMessageDialog(null, "no,      INCORRECT");
+	}
+}
 
+//jack black
+if (i == 3) {
+	if (guess.equalsIgnoreCase("jack")) {
+		JOptionPane.showMessageDialog(null, "yes");
+	}
+	else if (guess.equalsIgnoreCase("black")) {
+		JOptionPane.showMessageDialog(null, "yes");
+	}
+	else if (guess.equalsIgnoreCase("jack black")) {
+		JOptionPane.showMessageDialog(null, "yes");
+	}
+	else {
+		JOptionPane.showMessageDialog(null, "no,      INCORRECT");
+	}
+}
+if (i == 4) {
+	JOptionPane.showMessageDialog(null, "test");
+}
 			// 6. Otherwise:
 			// -- Tell them they are wrong and who the person is
 
@@ -75,7 +137,7 @@ public class BodyPartQuiz {
 		window.add(panel);
 		
 		// 3. Change the size of the window so that you can only see part of the image.		
-		window.setSize(500,500);
+		window.setSize(150,110);
 		
 		showNextImage();
 		
