@@ -35,6 +35,8 @@ frame.setVisible(true);
 leftButton.setText("click me if you think that finn sucks");;
 		// 4. Set the text of the rightButton to "Click me!"
 rightButton.setText("click me if you think that josh is awesome");	
+rightButton.setPreferredSize(BIG);
+
 // 5. Add an action listener to the leftButton
 leftButton.addActionListener(this);
 		// 6. Add an action listener to the rightButton
@@ -42,11 +44,11 @@ rightButton.addActionListener(this);	// 7. Add the leftButton to the panel
 
 		// 8. Add the rightButton to the panel
 panel.add(leftButton);
-		// 9. Pack the frame
+		// 9. Pack the frameconconditiondition
 panel.add(rightButton);
 		// 10. Set the title of the frame to "Demanding Buttons"
 frame.pack();
-frame.setTitle(demanding Buttons);
+frame.setTitle("demanding Buttons");
 	}
 
 	@Override
@@ -55,12 +57,23 @@ frame.setTitle(demanding Buttons);
 		
 		
 		/* If the buttonPressed was the leftButton....*/
+		if (buttonPressed == leftButton) {
+			rightButton.setText("No, Click Me!");
+			rightButton.setPreferredSize(BIG);
+			leftButton.setText("Click Me");
+			leftButton.setPreferredSize(SMALL);
+		}
 			// Set the text of the rightButton to "No, click Me!"
 			// Set the PREFERRED size of the rightButton to BIG
 			// Set the text of the leftButton to "Click Me!"
 			// Set the PREFERRED size of the leftButton to SMALL
 		
-		
+		if (buttonPressed == rightButton) {
+			leftButton.setText("No, Click Me!");
+			leftButton.setPreferredSize(BIG);
+			rightButton.setText("Click Me");
+			rightButton.setPreferredSize(SMALL);
+		}
 		/* If the buttonPressed was the rightButton, do the opposite. */
 		
 
