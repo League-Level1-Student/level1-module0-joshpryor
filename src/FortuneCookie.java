@@ -20,6 +20,7 @@ public class FortuneCookie implements ActionListener {
 
 	}
 
+	//
 	void showButton() {
 
 		System.out.println("button");
