@@ -38,7 +38,7 @@ public class SoundEffects implements ActionListener {
 		button4.setText("drum");
 		button4.addActionListener((ActionListener) this);
 		window.pack();
-
+		//
 	}
 
 	private void playSound(String fileName) {
