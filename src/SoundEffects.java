@@ -14,6 +14,7 @@ public class SoundEffects implements ActionListener {
 	JButton button2 = new JButton();
 	JButton button3 = new JButton();
 	JButton button4 = new JButton();
+	// JButton button5 = new JButton();
 
 	public static void main(String[] args) {
 
@@ -29,6 +30,7 @@ public class SoundEffects implements ActionListener {
 		panal.add(button2);
 		panal.add(button3);
 		panal.add(button4);
+		// panal.add(button5);
 		button1.setText("sawing wood");
 		button1.addActionListener((ActionListener) this);
 		button2.setText("cymbal");
@@ -37,6 +39,8 @@ public class SoundEffects implements ActionListener {
 		button3.addActionListener((ActionListener) this);
 		button4.setText("drum");
 		button4.addActionListener((ActionListener) this);
+		// button5.setText("quiet wispers");
+		// button5.addActionListener((ActionListener) this);
 		window.pack();
 		//
 	}
@@ -66,6 +70,9 @@ public class SoundEffects implements ActionListener {
 		else if (buttonPressed == button4) {
 			playSound("drum.wav");
 		}
+		// else if (buttonPressed == button5) {
+		// playSound("gunshot1.wav");
+		// }
 
 	}
 
